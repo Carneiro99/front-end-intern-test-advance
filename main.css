@@ -5,8 +5,128 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 
+.header{
+    grid-area: header;
+    background-color: #ACD0B6;
+}
+
+.main{
+    grid-area: main;
+}
+
+.container{
+    Margin: 0;
+    Padding: 0;
+    display: grid;
+    background-image: url("./assets/04-BG.png");
+    grid-gap: 20px;
+    grid-template-rows:70px 40px 110px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    '. . .'
+    '. main. '
+    
+}
+
+#logoHeader {
+    position: absolute;
+    left: 40%; 
+	top: 20px;
+}
+
 h1 {
+    
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    color: purple;
+    font-weight: 400;
+    LINE-HEIGHT:45px;
+    text-align: center;
+    color: #E1EFCE;
 }
+
+.normal { border: 1px solid #000000; 
+}
+
+.highlightsForm { 
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #ffff;
+    border: 2px solid #ff0000; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.highlightsTextForm { 
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #ffff;
+    border: 2px solid #ff0000; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-contact-input {
+    width: 98%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    align-self: center;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+  .form-contact-textarea {
+    width: 98%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #ffff;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    align-self: center;
+    height: 200px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.form-contact-button {
+    width: 100%;
+    font-size: 22px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    color: #fff;
+    height: 40px;    
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #71A397;
+    box-shadow:0 8px 0 #4B8A79;
+    display: block;
+    border: none;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 700;
+}
+
+
