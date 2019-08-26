@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="main.css">
     <title>GreenCity</title>
 </head>
-<body>
-    <h1>Hello World</h1>
+
 
     <!-- Recomendamos que você não altere os IDs dos elementos do formulário -->
-    <form id="contact" action="#">
-        <input type="text" id="name" placeholder="Nome">
-        <input type="text" id="email" placeholder="Endereço de email">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
-        <input type="submit" value="Enviar">
-    </form>
 
+    <body class="container">
+                <header class="header">
+                    <img src="./assets/06-LOGO.png"  id="logoHeader">
+                </header> 
+    
+    <div class="main">
+        <h1 >Vem tomar um café com a gente</h1>
+        <form class="item-2" id="contact" action="#"  >
+            <input class="form-contact-input" type="text" id="name" placeholder="Nome">
+            <input class="form-contact-input" type="text" id="email" placeholder="Email">
+            <textarea class="form-contact-textarea" name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <input class="form-contact-button" type="submit" value="Enviar" id="active">
+        </form>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
